@@ -12,6 +12,38 @@ class Sensor:
     def read_sensor(self):
         return np.random.uniform(20, 25)
 
+'''
+
+APM:
+
+Ye nokteye jaleb khedmateton begam 
+zamani k shoma mikhahid begid agar variable B = 'ali' ya 'Ali' bashad felan kon 
+behtar ebenevisid
+if b=='ali' or b=='ALI' 
+agar shoma bejaye in benevisid 
+b=='ali' or 'ALI' in ghalate chera?
+choon joloye if agar az alamat haye moghayese etsefade nakonid masalan benevisid (if 24: ) , tooye python
+neveshte shode harchizi joz None, True hast pas hamishe true midone
+if b=='ali' or 'ALI' yani dota shart ro chekc kon ya b=='ali' hast , ya inke 'ALI' is not None? hamishe sharte dovomi dorost dar maid.
+
+
+hamantor ke goftan dota rah vojod dare ---> 
+1) if b=='ali' or b=='Ali'
+
+gahan yek ja ma koli shart minevisim k eshtebahe va mishe kar haye sade tari kard maslaan
+
+if b.strip().lower()=='ali'
+
+in b ro miad aval space haye sar o taheshoi avr mdidare va badesh koochikesh mikone -> in rah ha efficient tare
+moafagh bashid
+
+
+
+'''
+
+
+
+
 class Device:
     def __init__(self,topic,status):
         self.status = status
