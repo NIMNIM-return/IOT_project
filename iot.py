@@ -40,7 +40,7 @@ moafagh bashid
 
 
 '''
-
+#mamnon ostad drostesh mikonam
 
 
 
@@ -62,16 +62,16 @@ class Device:
 
 #baraye in ke befahmim aya roshan hast ya na
     def turn_on(self):
-        if self.status == 'on' or 'On' or 'ON':
+        if self.status.strip().lower() == 'on':
             print ('it is on already!')
-        elif self.status == 'off' or 'Off' or 'OFF':
+        elif self.status.strip().lower() == 'off':
             self.status = 'on'
             print('it is on now')
 
     def turn_off(self):
-        if self.status == 'off' or 'Off' or 'OFF':
+        if self.status.strip().lower() == 'off':
             print ('it is off already!')
-        elif self.status == 'on' or 'On' or 'ON':
+        elif self.status.strip().lower() == 'on':
             self.status = 'off'
             print('it is off now')
     def show_status(self):
