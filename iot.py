@@ -132,6 +132,25 @@ class AdminPanel:
         for device in devices:
             device.turn_off()
         print(f'all devises in {group_name} is now turned off')
+            def turn_on_all_devices(self):
+        for i in self.groups:
+            devices = self.get_devices_in_groups(i)
+            for device in devices:
+                device.turn_on()
+        print('all of the devices are now turned on')
+
+    def turn_off_all_devices(self):
+        for i in self.groups:
+            devices = self.get_devices_in_groups(i)
+            for device in devices:
+                device.turn_off()
+        print('all of the devices are now turned off')
+
+    def get_status_in_group(self, group_name):
+        devices = self.get_devices_in_groups(group_name)
+        for device in devices:
+            a=device.show_status()
+            print(f'{device} is {a}')
 
             
 if __name__=='__main__':
