@@ -11,6 +11,12 @@ class Sensor:
 
     def read_sensor(self):
         return np.random.uniform(20, 25)
+'''
+NimaJasour:
+                                        salam ostad mishe ye hint dar morede tabe (get_data_from_sensor_in_group) va (get_status_in_device_type) be man bedid 
+                                            va ye soaal dige ine ke chera vaghti man mikham dicsheneri (groups) ro bebinam behem (none) bar migardone
+
+'''
 
 '''
 
@@ -151,8 +157,45 @@ class AdminPanel:
         for device in devices:
             a=device.show_status()
             print(f'{device} is {a}')
+    def get_status_in_device_type(self,device_type):
+        x = self.groups.values()
+        for device in x:
+            if device_type == device:
+                c=Device.show_status
+                print(c)
+    def create_sensore(self,name,unit):
+        a=Sensor(name,unit)
+        print(f'the sencore named {name} creared')
 
-            
+    def add_sensor_in_group(self, group_name,sencore_name ,sencore_unit):
+        if group_name in self.groups:
+            self.groups[group_name].append(self.create_sensore(sencore_name,sencore_unit))
+            print(f'sencore named {sencore_name} added to the {group_name}')
+        else:
+            print('your group is not created yet')
+
+    def get_data_from_sensor_in_group(self, group_name):
+        devices = self.get_devices_in_groups(group_name)
+        if Sensor == devices:
+            b=Sensor.read_sensor
+            print(b)
+
 if __name__=='__main__':
-    a1=Device('home/living room/lamp/lamp1', 'on')
+    a1=Device('home/living room/lamp/lamp1')
     a1.turn_on()
+    print(a1.show_status())
+    d1=AdminPanel()
+    d1.create_group('living_room')
+    #d1.create_group('room1')
+    #d1.create_group('room2')
+    #d1.create_multiple_devices('living_room','lamp',20)
+    #d1.create_multiple_devices('room1', 'door', 4)
+    #d1.create_multiple_devices('room2', 'door', 2)
+    #d1.turn_on_all_devices()
+    #d1.get_status_in_group('living_room')
+    d1.get_status_in_device_type('lamp')
+    d1.add_sensor_in_group('living_room','s1','c')
+    d1.get_data_from_sensor_in_group('living_room')
+    d1.add_sensor_in_group('room', 's1', 'c')
+    q=d1.groups
+    print(q)
