@@ -16,6 +16,9 @@ NimaJasour:
                                         salam ostad mishe ye hint dar morede tabe (get_data_from_sensor_in_group) va (get_status_in_device_type) be man bedid 
                                             va ye soaal dige ine ke chera vaghti man mikham dicsheneri (groups) ro bebinam behem (none) bar migardone
 
+APM: baratoon comment gozashtam roooye har function
+
+
 '''
 
 '''
