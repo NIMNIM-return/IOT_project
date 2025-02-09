@@ -141,7 +141,10 @@ class AdminPanel:
         for device in devices:
             device.turn_off()
         print(f'all devises in {group_name} is now turned off')
-            def turn_on_all_devices(self):
+
+    #******
+    #in functioneton ja be ja shode boood okeyesh akrdam
+    def turn_on_all_devices(self):
         for i in self.groups:
             devices = self.get_devices_in_groups(i)
             for device in devices:
@@ -155,20 +158,46 @@ class AdminPanel:
                 device.turn_off()
         print('all of the devices are now turned off')
 
+
+    
     def get_status_in_group(self, group_name):
         devices = self.get_devices_in_groups(group_name)
         for device in devices:
             a=device.show_status()
             print(f'{device} is {a}')
+
+
+    #******
     def get_status_in_device_type(self,device_type):
+        #bejaye inke berid tooye values baa in code shoro konid
+        #for group_name, devices in self.groups.items(): 
+        #in yani miad har group item hasho migire group_names yeka , devcies yeja
+        #badehs tooye halghe bartaye hame devcies ha 
+
+        #for device in devices: ---> hala ma b doone doone device ha dastresi darim
+        #class devcie ye attribute dasht bename device_type
+        #yani if device.device_type== hala mitoni esme device_type ro bzari ag in true bod device.show_status()
+
+        #eshtebahe dg --> shoma neevshtid device.show_status --> show_status yek tabe hast va tabe ha bayad parantez bzari show_status()
         x = self.groups.values()
         for device in x:
             if device_type == device:
                 c=Device.show_status
                 print(c)
+
+
+
+    #******
+    #moshkele in tabe ine ke miad yek sensor misaze va fght minevise a 
+    #khob return nemikone !!!!!!
+    #bayad a ro return kone ta jolosh zarf bezari va zakhirash koni
+    #zamani k return nadare, ag sedash bezani None pas mide
+    #vase hamin harja sedash bezani ( mesle tabeye add_sdensor_in_group , None barmigardone
+    
     def create_sensore(self,name,unit):
         a=Sensor(name,unit)
         print(f'the sencore named {name} creared')
+        #kafie inja return bezari va hata tabeye add_sensor_in_group ham ok mishe
 
     def add_sensor_in_group(self, group_name,sencore_name ,sencore_unit):
         if group_name in self.groups:
@@ -177,6 +206,11 @@ class AdminPanel:
         else:
             print('your group is not created yet')
 
+    #*******
+    #khate aval doroste 
+    #hala bayad bere tooye doone devices befahme ke in device hast ya sensor --> yani y if bayad bzri 
+    #ag sensor bood hala oon device bayad roosh .read_sensor bzni , bnaz yadet nare harja tabe seda mizni bayad bnvisi .read_sensor()
+    #parantez yadet nare
     def get_data_from_sensor_in_group(self, group_name):
         devices = self.get_devices_in_groups(group_name)
         if Sensor == devices:
