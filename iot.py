@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class Sensor:
     def __init__(self, name, group, unit):
         self.name = name
