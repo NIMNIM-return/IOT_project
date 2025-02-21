@@ -167,23 +167,12 @@ class AdminPanel:
             print(f'{device} is {a}')
 
 
-    #******
+    
     def get_status_in_device_type(self,device_type):
-        #bejaye inke berid tooye values baa in code shoro konid
-        #for group_name, devices in self.groups.items(): 
-        #in yani miad har group item hasho migire group_names yeka , devcies yeja
-        #badehs tooye halghe bartaye hame devcies ha 
-
-        #for device in devices: ---> hala ma b doone doone device ha dastresi darim
-        #class devcie ye attribute dasht bename device_type
-        #yani if device.device_type== hala mitoni esme device_type ro bzari ag in true bod device.show_status()
-
-        #eshtebahe dg --> shoma neevshtid device.show_status --> show_status yek tabe hast va tabe ha bayad parantez bzari show_status()
-        x = self.groups.values()
-        for device in x:
-            if device_type == device:
-                c=Device.show_status
-                print(c)
+        for group_name, devices in self.groups.items():
+            for device in devices:
+                if device.device_type == device_type:
+                    device.show_status()
 
 
 
