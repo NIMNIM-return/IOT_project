@@ -202,9 +202,9 @@ class AdminPanel:
     #parantez yadet nare
     def get_data_from_sensor_in_group(self, group_name):
         devices = self.get_devices_in_groups(group_name)
-        if Sensor == devices:
-            b=Sensor.read_sensor
-            print(b)
+        for sencore in devices:
+            b=sencore.read_sensor()
+        print(f'sencore is showing {b}')
 
 if __name__=='__main__':
     a1=Device('home/living room/lamp/lamp1')
@@ -212,6 +212,7 @@ if __name__=='__main__':
     print(a1.show_status())
     d1=AdminPanel()
     d1.create_group('living_room')
+    d1.add_sensor_in_group('living_room','nima','c')
     #d1.create_group('room1')
     #d1.create_group('room2')
     #d1.create_multiple_devices('living_room','lamp',20)
@@ -219,9 +220,10 @@ if __name__=='__main__':
     #d1.create_multiple_devices('room2', 'door', 2)
     #d1.turn_on_all_devices()
     #d1.get_status_in_group('living_room')
-    d1.get_status_in_device_type('lamp')
-    d1.add_sensor_in_group('living_room','s1','c')
+    #d1.get_status_in_device_type('lamp')
+    #d1.add_sensor_in_group('living_room','s1','c')
+    #d1.get_data_from_sensor_in_group('living_room')
     d1.get_data_from_sensor_in_group('living_room')
-    d1.add_sensor_in_group('room', 's1', 'c')
     q=d1.groups
     print(q)
+
