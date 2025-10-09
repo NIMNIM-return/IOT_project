@@ -10,7 +10,8 @@ class Sensor:
 
     def read_sensor(self):
         return np.random.uniform(20, 25)
-        
+
+
 '''
 NimaJasour:
                                         salam ostad mishe ye hint dar morede tabe (get_data_from_sensor_in_group) va (get_status_in_device_type) be man bedid 
@@ -227,4 +228,5 @@ if __name__=='__main__':
     d1.get_data_from_sensor_in_group('living_room')
     q=d1.groups
     print(q)
+
 
