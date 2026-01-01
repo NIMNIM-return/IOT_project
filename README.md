@@ -5,8 +5,8 @@ Python Developer | Python
 - Python
 
 ### Featured Projects
--IOT using python 
--OOP
+- IOT using python 
+- OOP
 
 ### Contact
 - LinkedIn:[ (your link)](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
