@@ -10,4 +10,4 @@ Python Developer | Python
 
 ### Contact
 - [ LinkedIn](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
-- [ Email](nimajasour5@gmail.com)
+- nimajasour5@gmail.com
