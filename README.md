@@ -1,8 +1,3 @@
-@charset "utf-8";
-
-.farsi{
-  color= #fff;
-}
 <p align="center">
   <a href="#-english">English</a> •
   <a class="farsi" href="#-فارسی">فارسی</a>
