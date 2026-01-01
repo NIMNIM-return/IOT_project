@@ -18,7 +18,7 @@ Python Developer | Python
 ### Contact
 - [ LinkedIn](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
 - nimajasour5@gmail.com
-
+<div dir="rtl">
 ## 🇮🇷 فارسی
 ## سلام، من نیما هستم 👋
 توسعه‌دهنده بک‌اند | Python، Django
@@ -34,4 +34,4 @@ Python Developer | Python
 ### راه‌های ارتباطی (Contact)
 - [ LinkedIn](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
 - nimajasour5@gmail.com
-
+</div>
