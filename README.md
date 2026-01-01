@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="#-english">English</a> •
+  <a href="#-فارسی">فارسی</a>
+</p>
+
+## 🇬🇧 English
+...text...
+
+## 🇮🇷 فارسی
+...متن...
+
 ## Hi, I'm Nima 👋
 Python Developer | Python
 
