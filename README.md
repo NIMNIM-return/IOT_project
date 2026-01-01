@@ -1,14 +1,14 @@
+@charset "utf-8";
+
+.farsi{
+  color= #fff;
+}
 <p align="center">
   <a href="#-english">English</a> •
-  <a href="#-فارسی">فارسی</a>
+  <a class="farsi" href="#-فارسی">فارسی</a>
 </p>
 
 ## 🇬🇧 English
-...text...
-
-## 🇮🇷 فارسی
-...متن...
-
 ## Hi, I'm Nima 👋
 Python Developer | Python
 
@@ -22,3 +22,6 @@ Python Developer | Python
 ### Contact
 - [ LinkedIn](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
 - nimajasour5@gmail.com
+
+## 🇮🇷 فارسی
+...متن..
