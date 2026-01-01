@@ -20,9 +20,10 @@ Python Developer | Python
 - nimajasour5@gmail.com
 
 
-## 🇮🇷 فارسی
+
 <div dir="rtl">
 
+## 🇮🇷 فارسی
 ## سلام، من نیما هستم 👋
 توسعه‌دهنده بک‌اند | Python، Django
 
