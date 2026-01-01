@@ -22,6 +22,7 @@ Python Developer | Python
 
 ## 🇮🇷 فارسی
 <div dir="rtl">
+
 ## سلام، من نیما هستم 👋
 توسعه‌دهنده بک‌اند | Python، Django
 
