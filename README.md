@@ -9,5 +9,5 @@ Python Developer | Python
 - OOP
 
 ### Contact
-- [ (LinkedIn)](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
-- [ (Email)](nimajasour5@gmail.com)
+- [ LinkedIn](https://www.linkedin.com/in/nima-jasour-30a9b6259/)
+- [ Email](nimajasour5@gmail.com)
